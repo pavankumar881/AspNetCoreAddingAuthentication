@@ -3,9 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WishList.Data;
 using WishList.Models;
-
-
-
 namespace WishList.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -13,7 +10,6 @@ namespace WishList.Data
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
-
         public DbSet<Models.Item> Items { get; set; }
     }
 }
